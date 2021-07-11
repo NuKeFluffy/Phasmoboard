@@ -6,7 +6,7 @@ def init(device_name: str = "CABLE Input (VB-Audio Virtual Cable)"):
         print("[ERROR] VB-Audio Virtual Cable is not installed. Install it from https://vb-audio.com/Cable/index.htm and try again.")
         return False
 
-def play_sound(file_name: str, delay: int = 0):
+def play_sound(file_name: str, delay: int = 3):
     try:
         mixer.music.load(file_name)
         for i in range(delay, 0, -1):
@@ -19,13 +19,13 @@ def play_sound(file_name: str, delay: int = 0):
         return False
 
 def print_logo():
-    print("██████╗ ██╗  ██╗ █████╗ ███████╗███╗   ███╗ ██████╗ ██████╗  ██████╗  █████╗ ██████╗ ██████╗\n██╔══██╗██║  ██║██╔══██╗██╔════╝████╗ ████║██╔═══██╗██╔══██╗██╔═══██╗██╔══██╗██╔══██╗██╔══██╗\n██████╔╝███████║███████║███████╗██╔████╔██║██║   ██║██████╔╝██║   ██║███████║██████╔╝██║  ██║\n██╔═══╝ ██╔══██║██╔══██║╚════██║██║╚██╔╝██║██║   ██║██╔══██╗██║   ██║██╔══██║██╔══██╗██║  ██║\n██║     ██║  ██║██║  ██║███████║██║ ╚═╝ ██║╚██████╔╝██████╔╝╚██████╔╝██║  ██║██║  ██║██████╔╝\n╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝ ╚═════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝\n\nBuild: 1.0.0 | GitHub Repository: https://github.com/NuKeFluffy/Phasmoboard | Developer: NuKe Fluffy")
+    print("██████╗ ██╗  ██╗ █████╗ ███████╗███╗   ███╗ ██████╗ ██████╗  ██████╗  █████╗ ██████╗ ██████╗\n██╔══██╗██║  ██║██╔══██╗██╔════╝████╗ ████║██╔═══██╗██╔══██╗██╔═══██╗██╔══██╗██╔══██╗██╔══██╗\n██████╔╝███████║███████║███████╗██╔████╔██║██║   ██║██████╔╝██║   ██║███████║██████╔╝██║  ██║\n██╔═══╝ ██╔══██║██╔══██║╚════██║██║╚██╔╝██║██║   ██║██╔══██╗██║   ██║██╔══██║██╔══██╗██║  ██║\n██║     ██║  ██║██║  ██║███████║██║ ╚═╝ ██║╚██████╔╝██████╔╝╚██████╔╝██║  ██║██║  ██║██████╔╝\n╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝ ╚═════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝\n\nBuild: 1.0.1 | GitHub Repository: https://github.com/NuKeFluffy/Phasmoboard | Developer: NuKe Fluffy")
 
 def translate():
     translator = {
         1: "Spirit Box",
         2: "Doors",
-        3: "Foosteps",
+        3: "Footsteps",
         4: "Throwing",
         5: "Map Interactions",
         6: "Breathing & Heartbeats",
