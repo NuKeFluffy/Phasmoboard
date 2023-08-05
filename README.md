@@ -17,11 +17,6 @@ Basic Soundboard for Phasmophobia created in Python to troll some friends.
 ### Optional
 - **For custom sounds, add them to `Sounds\Custom`**.
 
-## Contacts
-**Discord**: Fluffy#7517
-
-**E-Mail**: nukefluffy0@gmail.com
-
 # In the future...
 - **More Sounds**
 - **Hotkeys to play Sounds**
